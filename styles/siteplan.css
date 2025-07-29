@@ -1,0 +1,79 @@
+:root {
+  --color-warm: #d62828;  /* Red warm for headers and accents */
+  --color-cool: #3a86ff;  /* Cool blue for links, borders */
+  --color-bg: #f4f4f4;    /* Light background */
+  --color-text: #222222;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  margin: 2rem;
+  line-height: 1.6;
+}
+
+h1, h2 {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--color-warm);
+  margin-bottom: 1rem;
+}
+
+header {
+  border-bottom: 3px solid var(--color-warm);
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+
+section {
+  margin-bottom: 2.5rem;
+}
+
+ul {
+  padding-left: 1.5rem;
+  list-style-type: disc;
+}
+
+code {
+  background-color: #eaeaea;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+footer {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 2px solid var(--color-cool);
+  text-align: center;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Wireframes layout */
+.wireframes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: flex-start;
+}
+
+.wireframes figure {
+  flex: 1 1 300px;
+  text-align: center;
+}
+
+.wireframes img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border: 2px solid var(--color-cool);
+  padding: 0.5rem;
+  background-color: white;
+  border-radius: 8px;
+}
+
+figcaption {
+  margin-top: 0.5rem;
+  font-style: italic;
+  color: var(--color-cool);
+}
